@@ -67,3 +67,7 @@ func (logger *Logger) WithLevelBy(envName string) *Logger {
 	}
 	return logger
 }
+
+func Default() *Logger {
+	return NewLogger("default").WithLevelBy("LOG_LEVEL")
+}
