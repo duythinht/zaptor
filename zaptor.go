@@ -14,6 +14,7 @@ type Logger struct {
 	lvl zap.AtomicLevel
 }
 
+//NewLogger return a logger
 func NewLogger(name string) *Logger {
 
 	level := zap.NewAtomicLevel()
